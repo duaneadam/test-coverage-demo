@@ -15,6 +15,6 @@ describe('HelloWorld.vue', () => {
     const wrapper = shallowMount(HelloWorld, {
       propsData: { msg },
     });
-    expect(wrapper.text()).toMatch('failed test example');
+    expect(wrapper.text()).toMatch('new message');
   });
 });
