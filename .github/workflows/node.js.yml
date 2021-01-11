@@ -20,11 +20,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+    - run: yarn install
+    - run: yarn run test:unit
     - name: Unit Test Coverage
       uses: mattallty/jest-github-action@v1.0.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         working-directory: apps/mindvalley_com/assets/quest
-    - run: yarn install
-    - run: yarn run test:unit
