@@ -5,6 +5,10 @@ name: Frontend CI
 
 on: [push, pull_request]
 
+defaults:
+  run:
+    working-directory: apps/mindvalley_com/assets/quest
+
 jobs:
   build:
 
