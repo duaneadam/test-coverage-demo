@@ -21,10 +21,10 @@ jobs:
       with:
         node-version: 12.x
     - run: yarn install
-    - name: Unit Test
+    - run: yarn ci
+    - name: Unit Test Coverage
       uses: mattallty/jest-github-action@v1.0.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         working-directory: apps/mindvalley_com/assets/quest
-        test-command: yarn ci
