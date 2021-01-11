@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit --collectCoverage",
+    "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:coverage": "vue-cli-service test:unit --json --outputFile=jest.results.json",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
