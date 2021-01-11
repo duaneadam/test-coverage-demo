@@ -27,4 +27,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         working-directory: apps/mindvalley_com/assets/quest
-        test-command: yarn run ci
+        test-command: yarn ci
